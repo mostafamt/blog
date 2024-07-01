@@ -1,0 +1,11 @@
+ <h1>Blog</h1>
+
+<?php echo "<pre>"; print_r($this->posts); ;echo "</pre>"; die(); ?>
+ <?php foreach ($this->posts as $post): ?>
+ <article>
+     <h1 id="post<?= $post->getId() ?>"><?= $post->getTitle() ?></h1>
+     <p>
+         <?= $post->getText() ?>
+     </p>
+ </article>
+ <?php endforeach ?>
