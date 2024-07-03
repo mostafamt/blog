@@ -10,6 +10,9 @@ return array(
         )
     ),
     'controllers' => array(
+//         'invokables' => array(
+//             'Blog\Controller\List' => 'Blog\Controller\ListController'
+//         ),
         'factories' => array(
             'Blog\Controller\List' => 'Blog\Factory\ListControllerFactory',
         ),
